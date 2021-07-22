@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            td{
+                border-style: solid;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    background-color: azure;
+            }
+        </style>
+        <title>
+        
+        </title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body style="background:rgb(56, 20, 5);">
+        <ul id="okitsok">
+            <li class="aa" >  <a href="index.html" id="00001" class="a" onmouseover="active1();" onmouseout="unactive1();">Home</a></li>
+              <li class="aa" ><a href="Education.html" id="00002" class="a" onmouseover="active2();" onmouseout="unactive2();">Education</a></li>
+            <li class="aa" >  <a href="Aboutme.html" id="00003"  class="a" onmouseover="active3();" onmouseout="unactive3();">About me</a></li>
+             <li class="aa" > <a href="contact.html" style="background-color: rgb(223, 115, 124);" id="00004" class="a" onmouseover="active4();" onmouseout="unactive4();">Contact</a></li>
+          </ul>
+          <div class="i">
+           <h2>Fill in what u feel my skills are</h2>
+           <form action="" name="feedback" onsubmit="return fillcheak()">
+               
+               <label for="email"> E-Mail ID :</label>
+               <input name="email" id="email" placeholder="xyz@abc.com" style="margin-left: 75px;" type="text"> <br>
+               <label for="name">name :</label>
+               <input name="name" id="name" placeholder="xyz asd" style="margin-left: 100px;" type="text"><br>
+               <label for="skill">skill :</label>
+               <input name="skill" id="skill" placeholder="some skill" style="margin-left: 113px;" type="text"><br>
+               <label for="rating">Rating :</label>
+               <select name="rating" style="margin-left: 94px;" id="rating">
+                   <option value="untrained">untrained</option>
+                   <option value="intermediate">intermediate</option>
+                   <option value="expert">expert</option>
+                   <option value="master">master</option>
+               </select><br><br>
+               <input style="padding: 5px 15px;" type="submit">
+            
+           </form>
+          </div>
+          <div class="j">
+             <h2> Recent Feedbacks</h2>
+             <table style="border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th class="d" rowspan="2">Skill</th>
+                        <th class="d" rowspan="2">Rating</th>
+                        <th class="d" colspan="2">Submitted by</th>
+                    </tr>
+                    <tr>
+                        <th class="d">Email ID</th>
+                        <th class="d">Name</th>
+                    </tr>
+                </thead>
+                <tbody id="push"> </tbody>
+            </table>
+          </div>
+       
+        
+        
+       
+        <script src="../js/script1.js" ></script>
+        <script src="../js/script.js"></script>
+        </body>
+        </html>

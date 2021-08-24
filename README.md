@@ -1,2 +1,2 @@
-# gaddam.github.io
+# gaddam.github
 first website
